@@ -4,13 +4,7 @@ Release Notes
 .. role:: small
 .. role:: smaller
 
-Version 0.1.1
+Version 1.0.0
 -------------
-Updates for interval output
-	- Outputs an IntervalArray
-
-Version 0.1.0
--------------
-
-Documentation overhaul
-	- Creation of documentation for :func:`~bcpseg.bcp_segment.bcpseg`
+Repository initialization
+	- Merging bcseg and cbseg repos

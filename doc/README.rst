@@ -1,16 +1,16 @@
 |Stars| |PyPIDownloads| |PyPI| |Build Status|
 
 .. |Stars| image:: https://img.shields.io/github/stars/kylessmith/ailist?logo=GitHub&color=yellow
-   :target: https://github.com/kylessmith/bcpseg/stargazers
-.. |PyPIDownloads| image:: https://pepy.tech/badge/bcpseg
-   :target: https://pepy.tech/project/bcpseg
-.. |PyPI| image:: https://img.shields.io/pypi/v/bcpseg.svg
-   :target: https://pypi.org/project/bcpseg
-.. |Build Status| image:: https://travis-ci.org/kylessmith/bcpseg.svg?branch=master
-   :target: https://travis-ci.org/kylessmith/bcpseg
+   :target: https://github.com/kylessmith/linear_segment/stargazers
+.. |PyPIDownloads| image:: https://pepy.tech/badge/linear_segment
+   :target: https://pepy.tech/project/linear_segment
+.. |PyPI| image:: https://img.shields.io/pypi/v/linear_segment.svg
+   :target: https://pypi.org/project/linear_segment
+.. |Build Status| image:: https://travis-ci.org/kylessmith/linear_segment.svg?branch=master
+   :target: https://travis-ci.org/kylessmith/linear_segment
 
-bcpseg – Library for Bayesian Changepoint Segmentation
-======================================================
+linear_segment – Bayesian Changepoint Segmentation
+==================================================
 
-The Cython-based implementation for the Bayesian Changepoint Segmentation efficiently deals 
-with many values.
+The Cython-based implementation for the Bayesian Changepoint and Circulare Binary Segmentation
+efficiently deals with many values.

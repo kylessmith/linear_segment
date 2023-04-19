@@ -14,19 +14,17 @@ import os
 import sys
 from pathlib import Path
 from datetime import datetime
-HERE = Path(__file__).parent
-#sys.path[:0] = [str(HERE.parent), str(HERE / 'extensions')]
-import bcpseg
-#sys.path.append(os.path.abspath('../cfDNA'))
+import linear_segment
+#sys.path.append(os.path.abspath('../ailist'))
 #sys.path.insert(0, os.path.abspath('.'))
-#sys.path.insert(0, os.path.abspath('..'))
+#sys.path.insert(0, os.path.abspath('../'))
 
 
 # -- Project information -----------------------------------------------------
-project = 'bcpseg'
-author = bcpseg.__author__
+project = 'linear_segment'
+author = "Kyles Smith"
 copyright = f'{datetime.now():%Y}, {author}.'
-version = bcpseg.__version__.replace('.dirty', '')
+version = "1.0.0"
 release = version
 
 
@@ -51,6 +49,7 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.autosummary',
               'sphinx.ext.intersphinx',
               'sphinx.ext.napoleon',
+              'sphinx_autodoc_typehints',
               'scanpydoc'
           ]
 
@@ -93,7 +92,7 @@ html_theme = "pydata_sphinx_theme"
 
 html_logo = "_static/logo.svg"
 
-html_theme_options = dict(github_url="https://github.com/kylessmith/bcpseg",
+html_theme_options = dict(github_url="https://github.com/kylessmith/linear_segment",
                           navigation_depth=4,
                           google_analytics_id="UA-170691991-1",
                           source_link_position= "footer",
@@ -113,14 +112,17 @@ html_theme_options = dict(github_url="https://github.com/kylessmith/bcpseg",
                             ("Benchmark", "benchmarking"),
                             ("Tutorial", "tutorial"),
                             ("BioscienceStack", "http://biosciencestack.com", True)
-                          ],)
+                          ],
+                          logo = {"image_light": "_static/logo.svg",
+                                  "image_dark": "_static/logo.svg"},
+                        )
 
 html_sidebars = {"**": []}
 
 html_context = dict(
     display_github=True,  # Integrate GitHub
     github_user='kylessmith',  # Username
-    github_repo='bcpseg',  # Repo name
+    github_repo='linear_segment',  # Repo name
     github_version='master',  # Version
     conf_py_path='/doc/',  # Path in the checkout to the docs root
     github_url="https://github.com",
