@@ -224,7 +224,7 @@ void online_bcp_segment_labeled(const double *data, labeled_aiarray_t *segments,
     labeled_aiarray_add(segments, start, i, label);
     free(R);
 
-    //return segments;
+    return;
 }
 
 
