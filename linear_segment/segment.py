@@ -38,7 +38,7 @@ def segment(values: np.ndarray,
             Number to skip before calculating probability [default:10]
         shuffles : int
             Number of shuffles conduct
-        p : double
+        p : float
             Pvalue cutoff
 
     Returns

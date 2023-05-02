@@ -12,11 +12,11 @@ __author__ = "Kyle S. Smith"
 
 __doc__ = """\
 
-bcpseg.bcpseg
-=============
+linear_segment
+==============
 
-.. currentmodule:: bcpseg.bcp_segment
+.. currentmodule:: linear_segment
 
-.. autofunction:: bcpseg
+.. autofunction:: segment
     
 """

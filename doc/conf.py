@@ -99,7 +99,7 @@ html_theme_options = dict(github_url="https://github.com/kylessmith/linear_segme
                           bootswatch_theme= "cerulean",
                           navbar_title= "ailist",
                           navbar_sidebarrel= False,
-                          bootstrap_version= "3",
+                          bootstrap_version= "4",
                           nosidebar= True,
                           body_max_width= '100%',
                           external_links=[{"name":"Other tools",
