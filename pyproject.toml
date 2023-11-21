@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "linear_segment"
-version = "1.0.0"
+version = "1.1.1"
 description = "Python package for Bayesian Change Point and Circular Binary Segmentation"
 authors = ["Kyle S. Smith <kyle.smith@stjude.org>"]
 maintainers = ["Kyle S. Smith <kyle.smith@stjude.org>"]
@@ -31,7 +31,7 @@ include = ["linear_segment/*.pyx", "linear_segment/*.pxd", "linear_segment/src/*
 python = "^3.10"
 numpy = "^1.23.5"
 cython = "^0.29.32"
-ailist = "^2.0.1"
+ailist = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

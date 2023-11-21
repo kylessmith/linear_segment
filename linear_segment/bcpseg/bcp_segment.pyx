@@ -124,7 +124,7 @@ def bcpseg(np.ndarray values,
     else:
         # Find unique labels
         labels = labels.astype(bytes)
-        unique_labels = pd.unique(labels)
+        unique_labels = [bytes(l) for l in pd.unique(labels)]
         c_lsegments = labeled_aiarray_init()
         for label in unique_labels:
             label_values = values[labels==label]

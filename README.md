@@ -22,13 +22,13 @@ Dependencies can be installed by:
 
 PyPI install, presuming you have all its requirements installed:
 ```
-	pip install linear_segmentation
+	pip install linear_segment
 ```
 
 ## Usage
 
 ```python
-from linear_segmentation import segment
+from linear_segment import segment
 import numpy as np
 
 # Create data
