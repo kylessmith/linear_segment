@@ -87,7 +87,7 @@ cbs_stat_t calculate_cbs_stat(double x[], int length)
     index_pair_t i0 = min_pair_index(i_max, i_min);
     index_pair_t i1 = max_pair_index(i_max, i_min);
 
-    cbs_stat.max_start = i0.index;
+    cbs_stat.max_start = i0.index + 1;
     cbs_stat.max_end = i1.index + 1;
     cbs_stat.max_t = pow((i1.value - i0.value), 2.0) * length;
     cbs_stat.max_t = cbs_stat.max_t / (i1.index - i0.index);

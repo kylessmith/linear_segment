@@ -33,16 +33,32 @@ import numpy as np
 
 # Create data
 np.random.seed(10)
-x = np.random.random(300000)
-x[10000:20000] = x[10000:20000] + 0.1
-x[25000:27000] = x[25000:27000] - 1
-labels = np.repeat('a', len(x))
+T = 50
+x = np.zeros(T)
+x[10:20] = 1.0
+x[30:40] = 1.0
+
+labels = np.repeat("a", T)   # "a" is a dummy label
 
 # Calculate segments
-segments = segment(x, labels, method="online_both")
-segments
-segments = segment(x, labels, method="cbs")
-segments
+segments = segment(x, labels, method="online_both", cutoff=0.3, offset=5)
+print(segments)
+
+LabeledIntervalArray
+   (0-10, a)
+   (10-20, a)
+   (20-30, a)
+   (30-40, a)
+   (40-50, a)
+segments = segment(x, labels, method="cbs", shuffles=200, p=0.05)
+print(segments)
+
+LabeledIntervalArray
+   (0-10, a)
+   (10-20, a)
+   (20-30, a)
+   (30-40, a)
+   (40-50, a)
 
 ```
 
