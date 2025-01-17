@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 cimport numpy as np
+np.import_array()
 cimport cython
 from libc.stdint cimport uint32_t, int32_t, int64_t
 from ailist import IntervalArray

@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 cimport numpy as np
+np.import_array()
 from ailist import IntervalArray
 from ailist.LabeledIntervalArray_core cimport LabeledIntervalArray, labeled_aiarray_t, labeled_aiarray_init
 
